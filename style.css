@@ -1,0 +1,96 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        width: 100%; /* Ensure the header spans the full width of the page */
+        box-sizing: border-box; /* Includes padding in width calculation */
+    }
+
+    .logo-image img {
+        height: 20px; /* Adjust the logo size */
+        padding-left: 200px;
+        padding-right: 100px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #ffffff; /* Highlight on hover */
+    }
+
+    .search-bar {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 20px;
+        font-size: 14px;
+        outline: none;
+    }
+
+    
+    .header a {
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    .header input[type="search"] {
+        margin-left: auto;
+    }
+    
+    .content {
+        width: 80%; /* Set the content div to be smaller */
+        max-width: 1200px; /* Add a maximum width for larger screens */
+        padding: 20px;
+        margin: 20px auto; /* Centers the content */
+        border-radius: 8px; /* Optional rounded corners */
+    }
+    
+    /* Movies grid */
+    .movies-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; /* Center the movie cards */
+    }
+    
+    /* Movie card styles */
+/* Movie card styles */
+.movie {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    flex: 1 1 calc(25% - 20px); /* Responsive width */
+    box-sizing: border-box;
+    text-align: center; /* Center-align content */
+    overflow: hidden; /* Ensures clean layout for posters */
+}
+
+.movie img {
+    border-radius: 8px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.movie h3 {
+    font-size: 16px;
+    margin: 10px 0 0; /* Add spacing */
+    color: #333; /* Neutral color */
+}
